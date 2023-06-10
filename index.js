@@ -10,7 +10,7 @@ function ask(questionText) {
 
 // ! run file in terminal with: node fileName.js
 // ! DO NOT TOUCH CODE ABOVE THIS LINE
-// ! Currently accepts input that is within the () likes (Yes) (No)
+//Todo sanitize input
 let playerInventory = []; // player starts with empty array
 
 class ClassLocation { // makes objects 
@@ -138,60 +138,3 @@ async function start() {
       }
     }  
 }
-
-/* //!Pseudo Code
-player 
-  //// - inventory = array[]
-  //   - add items to it via .push
-  //     - inventory['orange'] ( reference array element by its identifier and push/pop it)
-  // - status = state
-  // - status = state  
-  //     player['inventory'].push(library['itemsInRoom']['cookBook']);
-  //     delete library['itemsInRoom']['cookBook'];
-  // - status ( state )
-  // - lookupTable
-  //   - link table and state
-  Rooms
-  // - Nested objects? nah
-  // - allowed actions (in the nested objects)  nah
-  // - has array of items nah
-  // - description State Machine
-  // - connection = State Machine
-  // - inventory = array[]
-  // - state array for transitions 
-  // - Giant if else for flow
-  // main desc "Once a great palace and administrative hub for the Persian Empire. Now lies in ruins. You can still see the finely carved stone reliefs which seem to cover every available inch of space"
-  // garden disc "Once filled with a plethora of fruiting trees and vines. Maybe something there is something valuable here still"
-  // treasury disc "It contains the vast wealth of Persepolis and a large number of archival documents
-  // barracks disc "The whicker shields have all decayed in the ages, maybe some iron or armor is hidden in the rubble"
-*/
-
-// Todo if time:
-// function to move items
-// i for inventory
-// move moveRoom responses to array for increase functionality
-// I dont think I use currentState anymore?
-// l93 //playerInventory.push(gold); // this reads cleaner but returns [object Object] later
-
-//! Timeline
-/* 
-2-28 assignment
-3-1 story of persian castle 
-    give the task of moving item to function
-    pseudo code 
-3-2 establish given variables
-3-3 more pseudo code 
-3-4 problem with jscode, unable to run in node, fixed via restart
-3-5 sick/class
-3-6 replace object array with classes
-    finish if else flow
-3-7 lookupTable correctly linked
-    introduced gameStart to successfully transition rooms
-    TRY CATCH
-3-8 100% fleshing out flow
-    included ${} in console log
-    .push EVERYTHING
-3-9 descriptions
-    BIG CLEANUP
-*/
-
